@@ -1,0 +1,4 @@
+.secrets/
+.sf/
+.sfdx/
+node_modules/
