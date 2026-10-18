@@ -17,7 +17,7 @@ on:
       #  cannot read the config file. Every other branch and environment name
       #  in the whole pipeline comes from pipeline.config.yml.
       # ─────────────────────────────────────────────────────────────────────
-      - int
+      - env/monday
       # Also validate PRs into a release branch. The production release train
       # cuts these, and plan.py validates them against `prod-validate` (the
       # check-only environment). Match `production.release_branch_prefix`.
