@@ -22,7 +22,7 @@ baseline_branch: main
 #   target  — against the PR's own target branch, so a deploy carries only what
 #             that specific branch is missing. Smaller packages, but an
 #             environment can drift from production.
-delta_baseline: prod
+delta_baseline: target
 
 # ---- Salesforce org naming (only needed for Org Bootstrap) ----------------
 # Lets the bootstrap tooling derive each org's login URL and integration
