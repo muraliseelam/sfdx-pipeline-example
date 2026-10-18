@@ -31,7 +31,7 @@ permissions:
 
 jobs:
   prod:
-    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/prod-release.yml@v1
+    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/prod-release.yml@main
     secrets: inherit
     with:
       action: ${{ github.event.inputs.action }}

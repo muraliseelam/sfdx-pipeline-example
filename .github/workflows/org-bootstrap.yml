@@ -36,7 +36,7 @@ permissions:
 
 jobs:
   bootstrap:
-    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/org-bootstrap.yml@v1
+    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/org-bootstrap.yml@main
     with:
       environment: ${{ inputs.environment }}
       instance_url: ${{ inputs.instance_url }}

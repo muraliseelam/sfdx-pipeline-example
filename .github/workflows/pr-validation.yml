@@ -41,5 +41,5 @@ permissions:
 
 jobs:
   validate:
-    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/pr-validation.yml@v1
+    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/pr-validation.yml@main
     secrets: inherit

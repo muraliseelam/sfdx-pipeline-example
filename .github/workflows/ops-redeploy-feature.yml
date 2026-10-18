@@ -34,7 +34,7 @@ permissions:
 
 jobs:
   redeploy:
-    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/sf-ops-redeploy-feature.yml@v1
+    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/sf-ops-redeploy-feature.yml@main
     secrets: inherit
     with:
       feature_ref: ${{ inputs.feature_ref }}

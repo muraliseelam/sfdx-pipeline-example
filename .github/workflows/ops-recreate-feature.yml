@@ -26,7 +26,7 @@ permissions:
 
 jobs:
   recreate:
-    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/sf-ops-recreate-feature.yml@v1
+    uses: muraliseelam/sfdx-pipeline-actions/.github/workflows/sf-ops-recreate-feature.yml@main
     secrets: inherit
     with:
       name: ${{ inputs.name }}
