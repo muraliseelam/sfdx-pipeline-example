@@ -59,23 +59,23 @@ delta_baseline: prod
 # least surprising default, but if your pipeline branches are prefixed — say
 # `pipeline/qa` — set `branch:` to that and leave `name: qa`.
 environments:
-  - name: mon
-    branch: env/monday
+  - name: int
+    branch: int
     gh_environment: int
     gate: approval                  # PR -> validate + report; approve -> deploy + merge
     test_level: RunSpecifiedTests
     instance_url: https://computing-nosoftware-66293-dev-ed.scratch.my.salesforce.com
     integration_username: cicd.int.00dh10000019kg5@example.com
-  - name: tue
-    branch: env/tuesday
+  - name: qa
+    branch: qa
     gh_environment: qa
-    gate: on_demand                 # deploy:tue label on the mon PR
+    gate: on_demand                 # deploy:qa label on the int PR
     instance_url: https://ability-force-6448-dev-ed.scratch.my.salesforce.com
     integration_username: cicd.qa.00ddq00000hmh2w@example.com
-  - name: wed
-    branch: env/wednesday
+  - name: stage
+    branch: stage
     gh_environment: stage
-    gate: on_demand                 # deploy:wed label on the mon PR
+    gate: on_demand                 # deploy:stage label on the int PR
     instance_url: https://momentum-efficiency-8013-dev-ed.scratch.my.salesforce.com
     integration_username: cicd.stage.00djz0000012sqa@example.com
 
