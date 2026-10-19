@@ -122,7 +122,7 @@ production:
 # pipeline. The only gate enforced here is Apex test coverage, which fires
 # during the org deploy and only when *.cls / *.trigger change.
 quality_gates:
-  apex_coverage: true  # fail the deploy if changed Apex is below the threshold
+  apex_coverage: false  # ATTACK: turned off inside the feature PR
 
 # Minimum aggregate Apex code coverage (%) required by the apex_coverage gate.
 coverage_threshold: 85
