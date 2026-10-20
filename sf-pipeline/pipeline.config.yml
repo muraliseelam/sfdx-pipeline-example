@@ -62,7 +62,7 @@ environments:
   - name: int
     branch: int
     gh_environment: int
-    gate: auto                      # TEMPORARY (auto-gate live test): every PR push deploys + merges
+    gate: approval                  # PR -> validate + report; approve -> deploy + merge
     test_level: RunSpecifiedTests
     instance_url: https://computing-nosoftware-66293-dev-ed.scratch.my.salesforce.com
     integration_username: cicd.int.00dh10000019kg5@example.com
