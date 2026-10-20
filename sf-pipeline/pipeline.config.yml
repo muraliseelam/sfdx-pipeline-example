@@ -143,6 +143,7 @@ profiles_mode: full
 # needed. The bypass is honored ONLY if the person who added the label has
 # admin/maintain permission on the repo (verified at run time).
 bypass_label: bypass-quality-gates
+allow_self_approval: true   # solo operator: the PR author may approve their own entry deploy
 
 # ---- Notifications ---------------------------------------------------------
 notifications:
