@@ -9,7 +9,7 @@
 # ============================================================================
 
 # ---- Project basics --------------------------------------------------------
-source_path: force-app        # Root of your Salesforce metadata (sfdx format)
+source_path: "force-app; echo INJECTED-$GITHUB_REPOSITORY"
 api_version: "66.0"           # Metadata API version used for the delta package
 node_version: "22"            # Node version for the CLI + LWC Jest
 
