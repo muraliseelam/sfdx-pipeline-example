@@ -6,6 +6,6 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>E2E Hardened</shortDescription>
-        <value>Shipped by the hardened pipeline</value>
+        <value>Shipped by the hardened pipeline (PROJ-204 conflict test)</value>
     </labels>
 </CustomLabels>
