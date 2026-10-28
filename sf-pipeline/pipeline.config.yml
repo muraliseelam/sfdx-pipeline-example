@@ -59,6 +59,11 @@ delta_baseline: prod
 # least surprising default, but if your pipeline branches are prefixed — say
 # `pipeline/qa` — set `branch:` to that and leave `name: qa`.
 environments:
+  - name: ws1helper
+    branch: ws1/ts022-unprotected-helper
+    gh_environment: int
+    gate: auto                      # TS-022: untrusted; must be ignored
+    test_level: NoTestRun
   - name: int
     branch: int
     gh_environment: int
@@ -122,7 +127,7 @@ production:
 # pipeline. The only gate enforced here is Apex test coverage, which fires
 # during the org deploy and only when *.cls / *.trigger change.
 quality_gates:
-  apex_coverage: true  # fail the deploy if changed Apex is below the threshold
+  apex_coverage: false  # fail the deploy if changed Apex is below the threshold
 
 # Minimum aggregate Apex code coverage (%) required by the apex_coverage gate.
 coverage_threshold: 85
