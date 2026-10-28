@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>WS2_203__c</fullName>
     <externalId>false</externalId>
-    <label>WS2 203</label>
+    <label>WS2 203 v2</label>
     <length>40</length>
     <required>false</required>
     <trackTrending>false</trackTrending>
